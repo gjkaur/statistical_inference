@@ -36,10 +36,10 @@ Chapter 9 introduces the **sampling distribution of the mean**—the central con
 
 ### Simplified Example
 
-- **Population:** 4 scores: 2, 3, 4, 5 (μ = 3.5)
-- **Sample size:** n = 2
-- **All possible samples:** 4 × 4 = 16 (with replacement)
-- For each sample, compute the mean (X̄).
+- **Population:** 4 scores: 2, 3, 4, 5 ($\mu = 3.5$)
+- **Sample size:** $n = 2$
+- **All possible samples:** $4 \times 4 = 16$ (with replacement)
+- For each sample, compute the mean ($\bar{X}$).
 - The 16 sample means form the **sampling distribution of the mean**.
 
 ### Result
@@ -59,20 +59,20 @@ Chapter 9 introduces the **sampling distribution of the mean**—the central con
 
 | Distribution | Mean | Standard Deviation |
 |--------------|------|---------------------|
-| **Sample** | X̄ | s |
-| **Population** | μ | σ |
-| **Sampling distribution of the mean** | μX̄ | σX̄ (standard error) |
+| **Sample** | $\bar{X}$ | $s$ |
+| **Population** | $\mu$ | $\sigma$ |
+| **Sampling distribution of the mean** | $\mu_{\bar{X}}$ | $\sigma_{\bar{X}}$ (standard error) |
 
 ### Notes
 
-- **μX̄** (mu sub X-bar) = mean of the sampling distribution
-- **σX̄** (sigma sub X-bar) = standard error of the mean
-- Greek letters (μ, σ) = populations and sampling distributions (all possibilities)
-- English letters (X̄, s) = samples (observed data)
+- **$\mu_{\bar{X}}$** (mean of $\bar{X}$) = mean of the sampling distribution
+- **$\sigma_{\bar{X}}$** (standard error) = standard deviation of the sampling distribution of $\bar{X}$
+- Greek letters ($\mu$, $\sigma$) = populations and sampling distributions (all possibilities)
+- English letters ($\bar{X}$, $s$) = samples (observed data)
 
 ---
 
-## 9.4 Mean of All Sample Means (μX̄)
+## 9.4 Mean of All Sample Means ($\mu_{\bar{X}}$)
 
 **The mean of the sampling distribution of the mean always equals the population mean.**
 
@@ -80,9 +80,9 @@ $$\mu_{\bar{X}} = \mu$$
 
 ### Implications
 
-- μX̄ and μ are **interchangeable** in inferential statistics.
+- $\mu_{\bar{X}}$ and $\mu$ are **interchangeable** in inferential statistics.
 - If the population mean is 500, the sampling distribution is centered at 500.
-- The observed sample mean (e.g., 533) is evaluated as a deviation from μ (or μX̄).
+- The observed sample mean (e.g., 533) is evaluated as a deviation from $\mu$ (or $\mu_{\bar{X}}$).
 
 ### Intuition
 
@@ -91,7 +91,7 @@ $$\mu_{\bar{X}} = \mu$$
 
 ---
 
-## 9.5 Standard Error of the Mean (σX̄)
+## 9.5 Standard Error of the Mean ($\sigma_{\bar{X}}$)
 
 **The standard error of the mean equals the population standard deviation divided by the square root of the sample size.**
 
@@ -99,25 +99,25 @@ $$\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$$
 
 ### Interpretation
 
-> **The standard error of the mean is a rough measure of the average amount by which sample means deviate from the population mean (or from μX̄).**
+> **The standard error of the mean is a rough measure of the average amount by which sample means deviate from the population mean (or from $\mu_{\bar{X}}$).**
 
 ### Properties
 
-- **Smaller than σ** whenever n ≥ 2 (sample means vary less than individual scores).
+- **Smaller than $\sigma$** whenever $n \ge 2$ (sample means vary less than individual scores).
 - **Decreases as n increases** — Larger samples → less variability among sample means → more precise estimates.
 - The "error" refers to **generalization error** (samples not perfectly representing the population), not calculation error.
 
 ### Example
 
-- σ = 110 (SAT math), n = 100
-- σX̄ = 110 / √100 = 110 / 10 = **11**
+- $\sigma = 110$ (SAT math), $n = 100$
+- $\sigma_{\bar{X}}$ = 110 / √100 = 110 / 10 = **11**
 - Variability is reduced by a factor of 10.
 
 ### Rules of Thumb (When Shape Is Normal)
 
-- ~68% of sample means within ±1 σX̄ of μ
-- ~95% of sample means within ±2 σX̄ of μ
-- ~5% of sample means beyond ±2 σX̄ of μ
+- ~68% of sample means within ±1 $\sigma_{\bar{X}}$ of μ
+- ~95% of sample means within ±2 $\sigma_{\bar{X}}$ of μ
+- ~5% of sample means beyond ±2 $\sigma_{\bar{X}}$ of μ
 
 ---
 
@@ -152,7 +152,7 @@ $$\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$$
 ### For the Mean
 
 - Different **populations** → different sampling distributions.
-- Different **sample sizes** → different σX̄ (μX̄ = μ always).
+- Different **sample sizes** → different $\sigma_{\bar{X}}$ ($\mu_{\bar{X}} = \mu$ always).
 - Each (population, n) pair has its own sampling distribution of the mean.
 
 ### For Other Statistics
@@ -166,8 +166,8 @@ $$\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$$
 
 | Property | Formula/Description |
 |----------|---------------------|
-| **Mean** | μX̄ = μ (equals population mean) |
-| **Standard deviation** | σX̄ = σ / √n (standard error) |
+| **Mean** | $\mu_{\bar{X}} = \mu$ (equals population mean) |
+| **Standard deviation** | $\sigma_{\bar{X}} = \sigma/\sqrt{n}$ (standard error) |
 | **Shape** | Approximately normal if n is large enough (Central Limit Theorem) |
 
 ---
@@ -177,7 +177,10 @@ $$\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$$
 **Mean of the Sampling Distribution:**
 $$\mu_{\bar{X}} = \mu$$
 
-**Standard Error of the Mean:**
+**Standard Error of the Mean**
+
+*Plain:* σ_X̄ = σ/√n (sigma divided by the square root of n).
+
 $$\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$$
 
 ---
@@ -187,21 +190,20 @@ $$\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$$
 | Term | Definition |
 |------|------------|
 | Sampling distribution of the mean | Probability distribution of means for all possible random samples of size n |
-| Mean of the sampling distribution (μX̄) | Equals the population mean μ |
-| Standard error of the mean (σX̄) | σ/√n; variability of sample means |
+| Mean of the sampling distribution | Equals the population mean μ |
+| Standard error of the mean (σ_X̄) | σ/√n; variability of sample means |
 | Central limit theorem | Sampling distribution of the mean is approximately normal for large n |
 
 ---
 
 ## Quick Reference: Sampling Distribution vs. Population vs. Sample
 
-```
-POPULATION                    SAMPLE                    SAMPLING DISTRIBUTION
-All observations              One set of n observations  All possible sample means
-Mean: μ                       Mean: X̄                    Mean: μX̄ = μ
-SD: σ                         SD: s                      SD: σX̄ = σ/√n
-Shape: any                    Shape: reflects population  Shape: ≈ normal (if n large)
-```
+| | **Population** | **Sample** | **Sampling distribution of X̄** |
+|---|----------------|------------|----------------------------------|
+| **What** | All observations | One set of n observations | All possible sample means |
+| **Mean** | μ | X̄ | μ (same for all sample means) |
+| **SD** | σ | s | σ_X̄ = σ/√n (standard error) |
+| **Shape** | Any | Reflects population | ≈ normal (if n large) |
 
 ---
 

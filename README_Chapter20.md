@@ -18,7 +18,7 @@ Chapter 20 describes **nonparametric** (or **distribution-free**) tests for **ra
 ### When to Use t and F Tests Instead
 
 - When data are **quantitative** and populations appear **normal** with **equal variances**
-- **t and F tests are more powerful** — more likely to detect a false H₀ when assumptions hold
+- **t and F tests are more powerful** — more likely to detect a false $H_0$ when assumptions hold
 
 ---
 
@@ -49,12 +49,12 @@ Chapter 20 describes **nonparametric** (or **distribution-free**) tests for **ra
 
 ### Statistical Hypotheses
 
-- **H₀:** Population distribution 1 = Population distribution 2
-- **H₁:** Population distribution 1 ≠ Population distribution 2
+- **$H_0$:** Population distribution 1 = Population distribution 2
+- **$H_1$:** Population distribution 1 ≠ Population distribution 2
 
 ### Interpretation
 
-- **Strict:** Rejection of H₀ means the two populations differ in some unspecified way (central tendency, variability, shape, or combination)
+- **Strict:** Rejection of $H_0$ means the two populations differ in some unspecified way (central tendency, variability, shape, or combination)
 - **If** we assume similar variabilities and shapes → rejection implies different **central tendencies** (medians)
 
 ### Procedure
@@ -70,8 +70,8 @@ Chapter 20 describes **nonparametric** (or **distribution-free**) tests for **ra
 
 ### Decision Rule
 
-- **Reject H₀** if observed U **≤** critical U
-- **Retain H₀** if observed U **>** critical U
+- **Reject $H_0$** if observed U **≤** critical U
+- **Retain $H_0$** if observed U **>** critical U
 
 *Note: Unlike t and F, smaller U → more likely to reject*
 
@@ -83,7 +83,7 @@ Chapter 20 describes **nonparametric** (or **distribution-free**) tests for **ra
 ### TV Viewing Example
 
 - n₁ = 8, n₂ = 7; U = 20; critical U = 10
-- U = 20 > 10 → **retain H₀**
+- U = 20 > 10 → **retain $H_0$**
 
 ---
 
@@ -96,8 +96,8 @@ Chapter 20 describes **nonparametric** (or **distribution-free**) tests for **ra
 
 ### Statistical Hypotheses
 
-- **H₀:** Population distribution 1 = Population distribution 2
-- **H₁:** Population distribution 1 ≠ Population distribution 2
+- **$H_0$:** Population distribution 1 = Population distribution 2
+- **$H_1$:** Population distribution 1 ≠ Population distribution 2
 
 ### Procedure
 
@@ -111,8 +111,8 @@ Chapter 20 describes **nonparametric** (or **distribution-free**) tests for **ra
 
 ### Decision Rule
 
-- **Reject H₀** if observed T **≤** critical T
-- **Retain H₀** if observed T **>** critical T
+- **Reject $H_0$** if observed T **≤** critical T
+- **Retain $H_0$** if observed T **>** critical T
 
 ### Critical Values
 
@@ -121,7 +121,7 @@ Chapter 20 describes **nonparametric** (or **distribution-free**) tests for **ra
 ### TV Viewing (Matched Pairs) Example
 
 - n = 7; T = 1.5; critical T = 2
-- T = 1.5 ≤ 2 → **reject H₀**
+- T = 1.5 ≤ 2 → **reject $H_0$**
 
 ---
 
@@ -134,8 +134,8 @@ Chapter 20 describes **nonparametric** (or **distribution-free**) tests for **ra
 
 ### Statistical Hypotheses
 
-- **H₀:** All population distributions are equal
-- **H₁:** H₀ is false (at least one population differs)
+- **$H_0$:** All population distributions are equal
+- **$H_1$:** $H_0$ is false (at least one population differs)
 
 ### Procedure
 
@@ -158,15 +158,15 @@ $$df = \text{number of groups} - 1$$
 
 ### Decision Rule
 
-- **Reject H₀** if observed H **≥** critical χ²
-- **Retain H₀** if observed H **<** critical χ²
+- **Reject $H_0$** if observed H **≥** critical χ²
+- **Retain $H_0$** if observed H **<** critical χ²
 
 *Note: Unlike U and T, larger H → more likely to reject*
 
 ### TV Cartoon Example
 
 - 3 groups, n = 15; H = 0.11; critical χ² = 5.99 (df = 2)
-- H = 0.11 < 5.99 → **retain H₀**
+- H = 0.11 < 5.99 → **retain $H_0$**
 
 ---
 
@@ -223,7 +223,7 @@ $$H = \frac{12}{n(n+1)} \Sigma \frac{R_i^2}{n_i} - 3(n+1)$$
 
 ## Quick Reference: Decision Rules
 
-| Test | Reject H₀ when |
+| Test | Reject $H_0$ when |
 |------|----------------|
 | **U** | Observed U ≤ critical U |
 | **T** | Observed T ≤ critical T |

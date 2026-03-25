@@ -37,28 +37,28 @@ A **confidence interval** uses a range of values that, with a known degree of ce
 Based on three properties of the sampling distribution of the mean:
 
 1. **Mean** of the sampling distribution = unknown population mean μ
-2. **Standard error** σX̄ = σ/√n
+2. **Standard error** $\sigma_{\bar{X}} = \sigma/\sqrt{n}$
 3. **Shape** approximates normal (when n is large enough for the Central Limit Theorem)
 
 ### The Logic
 
 - **95% of all sample means** fall within 1.96 standard errors of the unknown population mean.
-- For each sample mean, construct an interval: X̄ ± 1.96 σX̄
+- For each sample mean, construct an interval: X̄ ± 1.96 $\sigma_{\bar{X}}$
 - **95% of these intervals** will include the unknown population mean (true intervals).
 - **5% of these intervals** will fail to include it (false intervals).
 
 ### Formula for Confidence Interval
 
-$$\text{CI} = \bar{X} \pm (z_{conf})(\sigma_{\bar{X}})$$
+$$\text{CI} = \bar{X} \pm (z_{\text{conf}})\,(\sigma_{\bar{X}})$$
 
 where:
 - **X̄** = sample mean
-- **zconf** = z score from the standard normal table for the desired level of confidence (e.g., 1.96 for 95%)
-- **σX̄** = standard error = σ/√n
+- **$z_{\text{conf}}$** = z score from the standard normal table for the desired level of confidence (e.g., 1.96 for 95%)
+- **$\sigma_{\bar{X}}$** = standard error = $\sigma/\sqrt{n}$
 
 ### SAT Example
 
-- X̄ = 533, σX̄ = 11, zconf = 1.96
+- X̄ = 533, $\sigma_{\bar{X}}$ = 11, $z_{\text{conf}}$ = 1.96
 - CI = 533 ± (1.96)(11) = 533 ± 21.56
 - **95% CI:** 511.44 to 554.56
 
@@ -102,15 +102,15 @@ The **level of confidence** indicates the percent of time that a series of confi
 
 ### Common Levels
 
-| Level | zconf | Use |
+| Level | $z_{\text{conf}}$ | Use |
 |-------|-------|-----|
 | **95%** | 1.96 | Most common; default choice |
 | **99%** | 2.58 | When a false interval has serious consequences |
 
 ### Effect on Width
 
-- **Higher level of confidence** → larger zconf → **wider** (less precise) interval
-- **Lower level of confidence** → smaller zconf → **narrower** (more precise) interval
+- **Higher level of confidence** → larger $z_{\text{conf}}$ → **wider** (less precise) interval
+- **Lower level of confidence** → smaller $z_{\text{conf}}$ → **narrower** (more precise) interval
 
 **Example:** 99% CI (504.62 to 561.38) is wider than 95% CI (511.44 to 554.56) for the same SAT data.
 
@@ -125,7 +125,7 @@ The **level of confidence** indicates the percent of time that a series of confi
 
 ### Larger Sample Size
 
-- **Standard error decreases:** σX̄ = σ/√n
+- **Standard error decreases:** $\sigma_{\bar{X}} = \sigma/\sqrt{n}$
 - **Result:** Narrower, more precise confidence interval
 - As n → ∞, the interval shrinks toward the point estimate
 
@@ -232,15 +232,15 @@ The **level of confidence** indicates the percent of time that a series of confi
 
 **Confidence Interval for μ (when σ is known):**
 
-$$\text{CI} = \bar{X} \pm (z_{conf})(\sigma_{\bar{X}})$$
+$$\text{CI} = \bar{X} \pm (z_{\text{conf}})\,(\sigma_{\bar{X}})$$
 
-where σX̄ = σ/√n
+where $\sigma_{\bar{X}} = \sigma/\sqrt{n}$
 
 ---
 
-## Quick Reference: zconf Values
+## Quick Reference: Critical z Values (Confidence Intervals)
 
-| Level of Confidence | zconf |
+| Level of Confidence | $z_{\text{conf}}$ |
 |---------------------|-------|
 | 90% | 1.65 |
 | 95% | 1.96 |

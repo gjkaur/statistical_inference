@@ -52,7 +52,7 @@ $$\bar{D} = \frac{\Sigma D}{n}$$
 
 ### Null and Alternative Hypotheses
 
-| Test Type | H₀ | H₁ |
+| Test Type | $H_0$ | $H_1$ |
 |-----------|-----|-----|
 | **Upper tail (EPO example)** | μD ≤ 0 | μD > 0 |
 | **Lower tail** | μD ≥ 0 | μD < 0 |
@@ -67,7 +67,7 @@ $$\bar{D} = \frac{\Sigma D}{n}$$
 ### Properties
 
 - **Mean:** μD̄ = μD (mean of sampling distribution = population mean of difference scores)
-- **Standard error:** σD̄ = σD / √n (analogous to σX̄ = σ / √n for a single sample)
+- **Standard error:** $\sigma_{\bar{D}} = \sigma_D / \sqrt{n}$ (analogous to $\sigma_{\bar{X}} = \sigma / \sqrt{n}$ for a single sample)
 
 ---
 
@@ -93,7 +93,7 @@ where n = number of **pairs** (difference scores).
 - D̄ = 5, sD̄ = 0.68, μD,hyp = 0
 - t = (5 − 0) / 0.68 = **7.35**
 - Critical t = 2.015 (df = 5, one-tailed, α = .05)
-- **Decision:** Reject H₀
+- **Decision:** Reject $H_0$
 - **Interpretation:** EPO increases mean endurance when patients are measured twice.
 
 ---
@@ -122,7 +122,7 @@ $$t = \frac{\bar{D} - 0}{s_{\bar{D}}}$$
 
 $$\text{CI} = \bar{D} \pm (t_{conf})(s_{\bar{D}})$$
 
-- Use tconf from Table B (two-tailed panel) for desired confidence and df = n − 1
+- Use $t_{\text{conf}}$ from Table B (two-tailed panel) for desired confidence and $\text{df} = n - 1$
 
 ### EPO Example
 
@@ -160,11 +160,11 @@ $$d = \frac{\bar{D}}{s_D}$$
 
 ### Summary Table (Table 15.3)
 
-| Type | Sample Mean | H₀ | Standard Error | df |
+| Type | Sample Mean | $H_0$ | Standard Error | df |
 |------|-------------|-----|----------------|-----|
-| **One sample** | X̄ | μ = some number | sX̄ = s/√n | n − 1 |
-| **Two independent** | X̄₁ − X̄₂ | μ₁ − μ₂ = 0 | sX̄₁−X̄₂ (Formula 14.3) | n₁ + n₂ − 2 |
-| **Two related** | D̄ | μD = 0 | sD̄ = sD/√n | n − 1 |
+| **One sample** | $\bar{X}$ | $\mu$ = some number | $s_{\bar{X}} = s/\sqrt{n}$ | $n - 1$ |
+| **Two independent** | $\bar{X}_1 - \bar{X}_2$ | $\mu_1 - \mu_2 = 0$ | $s_{\bar{X}_1 - \bar{X}_2}$ (Formula 14.3) | $n_1 + n_2 - 2$ |
+| **Two related** | $\bar{D}$ | $\mu_D = 0$ | $s_{\bar{D}} = s_D/\sqrt{n}$ | $n - 1$ |
 
 ---
 
@@ -175,13 +175,13 @@ $$d = \frac{\bar{D}}{s_D}$$
 - **Two related samples** (paired observations)
 - Question: Is there a **relationship** between X and Y? (not a mean difference)
 - **Measure:** Sample correlation coefficient r
-- **Hypothesis:** H₀: ρ = 0 (no correlation in population)
+- **Hypothesis:** $H_0$: ρ = 0 (no correlation in population)
 
 ### t Ratio for ρ
 
-$$t = \frac{r - \rho_{hyp}}{\sqrt{\frac{1 - r^2}{n - 2}}}$$
+$$t = \frac{r - \rho_{\text{hyp}}}{\sqrt{\frac{1 - r^2}{n - 2}}}$$
 
-- **ρhyp** = 0 (always, for testing zero correlation)
+- **$\rho_{\text{hyp}}$** = 0 (always, for testing zero correlation)
 - **df** = n − 2 (two degrees of freedom lost for the regression line)
 
 ### Greeting Card Example (Chapter 6)
@@ -189,8 +189,8 @@ $$t = \frac{r - \rho_{hyp}}{\sqrt{\frac{1 - r^2}{n - 2}}}$$
 - r = .80, n = 5
 - t = .80 / √[(1 − .64)/3] ≈ 2.29
 - Critical t = ±3.182 (df = 3, two-tailed, α = .05)
-- **Decision:** Retain H₀ — population correlation could equal zero
-- **Note:** With n = 5, r = .88 would be needed to reject H₀; small n → large sampling variability for r
+- **Decision:** Retain $H_0$ — population correlation could equal zero
+- **Note:** With n = 5, r = .88 would be needed to reject $H_0$; small n → large sampling variability for r
 
 ### Cohen's Guidelines for r
 

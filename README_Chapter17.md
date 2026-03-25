@@ -37,8 +37,8 @@ Chapter 17 extends the **one-factor ANOVA** (Chapter 16) to **repeated-measures 
 
 ### Hypotheses (Same as One-Factor)
 
-- **H₀:** μ₀ = μ₂₄ = μ₄₈
-- **H₁:** H₀ is false
+- **$H_0$:** μ₀ = μ₂₄ = μ₄₈
+- **$H_1$:** $H_0$ is false
 
 ### F Ratio
 
@@ -50,7 +50,7 @@ $$F = \frac{MS_{between}}{MS_{error}}$$
 ### Key Difference
 
 - **MSerror** < **MSwithin** because SSsubject (individual differences) is removed from the error term
-- Smaller denominator → larger F → more likely to reject H₀ when it is false
+- Smaller denominator → larger F → more likely to reject $H_0$ when it is false
 
 ---
 
@@ -131,7 +131,7 @@ $$F = \frac{MS_{between}}{MS_{error}}$$
 
 - Individual differences are subtracted from **both** numerator and denominator
 - The **denominator** (error) is typically smaller → shrinks more proportionally
-- Result: F increases when H₀ is false
+- Result: F increases when $H_0$ is false
 
 ---
 

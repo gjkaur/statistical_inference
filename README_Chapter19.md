@@ -36,12 +36,12 @@ Chapter 19 introduces the **chi-square (χ²) test** for **qualitative (nominal)
 ### Null Hypothesis
 
 - Specifies **hypothesized proportions** for each category
-- Example: H₀: P_O = .44, P_A = .41, P_B = .10, P_AB = .05
+- Example: $H_0$: P_O = .44, P_A = .41, P_B = .10, P_AB = .05
 - Proportions must sum to 1.00
 
 ### Alternative Hypothesis
 
-- H₁: H₀ is false (proportions differ from hypothesized in some way)
+- $H_1$: $H_0$ is false (proportions differ from hypothesized in some way)
 
 ---
 
@@ -56,14 +56,14 @@ $$f_e = (\text{expected proportion})(\text{total sample size})$$
 ### Observed vs. Expected
 
 - **f_o** = observed frequency (actual count in sample)
-- **f_e** = expected frequency (if H₀ is true)
+- **f_e** = expected frequency (if $H_0$ is true)
 
 ### χ² Formula
 
 $$\chi^2 = \Sigma \frac{(f_o - f_e)^2}{f_e}$$
 
 - Sum over all categories
-- Larger discrepancies → larger χ² → more likely to reject H₀
+- Larger discrepancies → larger χ² → more likely to reject $H_0$
 - Squaring makes all contributions positive; division by f_e weights by expected size
 
 ### Blood Type Example
@@ -93,12 +93,12 @@ where c = number of categories.
 
 ### Decision Rule
 
-- **Reject H₀** if observed χ² ≥ critical χ²
-- **Retain H₀** if observed χ² < critical χ²
+- **Reject $H_0$** if observed χ² ≥ critical χ²
+- **Retain $H_0$** if observed χ² < critical χ²
 
 ### Blood Type Example
 
-- Observed χ² = 11.24 > 7.81 → **reject H₀**
+- Observed χ² = 11.24 > 7.81 → **reject $H_0$**
 - Interpretation: Distribution of blood types in the student population differs from the U.S. claim.
 
 ### Nondirectional
@@ -131,13 +131,13 @@ where c = number of categories.
 
 ### Null Hypothesis
 
-- **H₀:** The two variables are **independent** (no relationship)
+- **$H_0$:** The two variables are **independent** (no relationship)
 - No predictability: knowing one variable does not help predict the other
-- Example: H₀: Type of neighborhood and return rate are independent
+- Example: $H_0$: Type of neighborhood and return rate are independent
 
 ### Alternative Hypothesis
 
-- H₁: H₀ is false (the two variables are related)
+- $H_1$: $H_0$ is false (the two variables are related)
 
 ---
 
@@ -151,7 +151,7 @@ $$f_e = \frac{(\text{row total})(\text{column total})}{\text{grand total}}$$
 
 ### Logic
 
-- If H₀ is true, the proportion in each row should be the same across columns
+- If $H_0$ is true, the proportion in each row should be the same across columns
 - Expected frequency = (row proportion) × (column total) = (row total/grand total) × (column total)
 
 ### χ² Formula (Same as One-Variable)
@@ -186,7 +186,7 @@ where c = number of columns, r = number of rows.
 
 ### Lost Letter Example
 
-- Observed χ² = 14.02 > 5.99 → **reject H₀**
+- Observed χ² = 14.02 > 5.99 → **reject $H_0$**
 - Interpretation: Type of neighborhood and return rate are **not** independent; neighborhood predicts return rate.
 
 ---
@@ -265,7 +265,7 @@ where:
 ### 3. Sample Size
 
 - **Too small:** Low power; may miss real effects
-- **Too large:** May detect trivial departures from H₀
+- **Too large:** May detect trivial departures from $H_0$
 - Use power analysis to guide sample size when possible
 
 ---
@@ -280,7 +280,7 @@ where:
 
 ## Summary
 
-| Test | H₀ | df | Expected Frequency |
+| Test | $H_0$ | df | Expected Frequency |
 |------|-----|-----|---------------------|
 | **One-variable** | Specified proportions | c − 1 | (proportion)(n) |
 | **Two-variable** | Independence | (c−1)(r−1) | (row total)(column total)/grand total |
@@ -293,7 +293,7 @@ where:
 |------|------------|
 | **One-variable χ² test** | Goodness-of-fit: observed vs. expected frequencies for one variable |
 | **Two-variable χ² test** | Test of independence: are two variables related? |
-| **Expected frequency (f_e)** | Frequency expected if H₀ is true |
+| **Expected frequency (f_e)** | Frequency expected if $H_0$ is true |
 | **Observed frequency (f_o)** | Actual frequency in the sample |
 | **φ²c (Cramer's phi squared)** | Effect size for two-variable χ² |
 | **Odds ratio** | Relative occurrence across two groups |

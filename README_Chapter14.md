@@ -32,7 +32,7 @@ Chapter 14 describes the **t test for two independent samples**—comparing the 
 
 ### Null and Alternative Hypotheses
 
-| Test Type | H₀ | H₁ |
+| Test Type | $H_0$ | $H_1$ |
 |-----------|-----|-----|
 | **Upper tail (EPO example)** | μ₁ − μ₂ ≤ 0 | μ₁ − μ₂ > 0 |
 | **Lower tail** | μ₁ − μ₂ ≥ 0 | μ₁ − μ₂ < 0 |
@@ -70,8 +70,8 @@ $$\sigma_{\bar{X}_1 - \bar{X}_2} = \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2
 
 $$t = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)_{hyp}}{s_{\bar{X}_1 - \bar{X}_2}}$$
 
-- **(μ₁ − μ₂)hyp** = 0 (typically)
-- **sX̄₁−X̄₂** = estimated standard error (Formula 14.3)
+- **$(\mu_1 - \mu_2)_{\text{hyp}}$** = 0 (typically)
+- **$s_{\bar{X}_1 - \bar{X}_2}$** = estimated standard error (Formula 14.3)
 
 ### Degrees of Freedom
 
@@ -80,10 +80,10 @@ $$df = n_1 + n_2 - 2$$
 ### EPO Example
 
 - X̄₁ = 11, X̄₂ = 6, (X̄₁ − X̄₂) = 5
-- sX̄₁−X̄₂ = 2.32
+- $s_{\bar{X}_1 - \bar{X}_2}$ = 2.32
 - t = (11 − 6 − 0) / 2.32 = **2.16**
 - Critical t = 1.812 (df = 10, one-tailed, α = .05)
-- **Decision:** Reject H₀
+- **Decision:** Reject $H_0$
 - **Interpretation:** EPO increases mean endurance scores.
 
 ---
@@ -116,8 +116,8 @@ $$t = \frac{(\bar{X}_1 - \bar{X}_2) - 0}{s_{\bar{X}_1 - \bar{X}_2}}$$
 
 The **p-value** is the degree of rarity of the test result, given that the null hypothesis is true.
 
-- **Smaller p-value** → more rare → tends to discredit H₀, support H₁
-- **Larger p-value** → less rare → does not discredit H₀
+- **Smaller p-value** → more rare → tends to discredit $H_0$, support $H_1$
+- **Larger p-value** → less rare → does not discredit $H_0$
 
 ### Interpretation
 
@@ -137,8 +137,8 @@ The **p-value** is the degree of rarity of the test result, given that the null 
 | **When specified** | Before the test | After the test |
 | **Meaning** | Cutoff that triggers rejection | Actual rarity of the observed result |
 
-- **p < .05** → would reject H₀ at α = .05
-- **p > .05** → would retain H₀ at α = .05
+- **p < .05** → would reject $H_0$ at α = .05
+- **p > .05** → would retain $H_0$ at α = .05
 
 ---
 
@@ -148,7 +148,7 @@ The **p-value** is the degree of rarity of the test result, given that the null 
 
 **Statistically significant** = the null hypothesis has been rejected; the result is unlikely due to chance alone.
 
-- Correct usage: **Rejecting H₀** refers to the population; **statistically significant** refers to the sample result.
+- Correct usage: **Rejecting $H_0$** refers to the population; **statistically significant** refers to the sample result.
 
 ### Important Caveats
 
@@ -160,9 +160,9 @@ The **p-value** is the degree of rarity of the test result, given that the null 
    - Very large n → very small standard error → even tiny, unimportant effects become "significant"
 
 3. **Avoid erroneous conditional probability**
-   - Correct: Pr(observed result | H₀ true) ≤ .05
-   - Incorrect: Pr(H₀ true | observed result) ≤ .05
-   - We cannot conclude H₀ is true with probability .05; we can only say it is probably false.
+   - Correct: Pr(observed result | $H_0$ true) ≤ .05
+   - Incorrect: Pr($H_0$ true | observed result) ≤ .05
+   - We cannot conclude $H_0$ is true with probability .05; we can only say it is probably false.
 
 ---
 
@@ -175,9 +175,9 @@ The **p-value** is the degree of rarity of the test result, given that the null 
 
 ### Confidence Interval for μ₁ − μ₂
 
-$$\text{CI} = (\bar{X}_1 - \bar{X}_2) \pm (t_{conf})(s_{\bar{X}_1 - \bar{X}_2})$$
+$$\text{CI} = (\bar{X}_1 - \bar{X}_2) \pm (t_{\text{conf}})\,(s_{\bar{X}_1 - \bar{X}_2})$$
 
-- Use tconf from Table B (two-tailed panel) for desired confidence and df = n₁ + n₂ − 2
+- Use $t_{\text{conf}}$ from Table B (two-tailed panel) for desired confidence and $\text{df} = n_1 + n_2 - 2$
 
 ### Interpreting CI for μ₁ − μ₂
 
@@ -195,7 +195,7 @@ $$\text{CI} = (\bar{X}_1 - \bar{X}_2) \pm (t_{conf})(s_{\bar{X}_1 - \bar{X}_2})$
 
 $$d = \frac{\bar{X}_1 - \bar{X}_2}{s_p} = \frac{\text{mean difference}}{\text{standard deviation}}$$
 
-where s_p = √(s_p²) is the pooled standard deviation.
+where $s_p = \sqrt{s_p^2}$ is the pooled standard deviation.
 
 ### Why Use d?
 
@@ -284,7 +284,7 @@ where s_p = √(s_p²) is the pooled standard deviation.
 | Topic | Key Point |
 |-------|-----------|
 | **Design** | Two independent samples (different subjects per group) |
-| **Hypotheses** | H₀: μ₁ − μ₂ = 0 (or ≤ 0, ≥ 0); H₁: μ₁ − μ₂ ≠ 0 (or < 0, > 0) |
+| **Hypotheses** | $H_0$: μ₁ − μ₂ = 0 (or ≤ 0, ≥ 0); $H_1$: μ₁ − μ₂ ≠ 0 (or < 0, > 0) |
 | **df** | n₁ + n₂ − 2 |
 | **Pooled variance** | s_p² = (SS₁ + SS₂) / (n₁ + n₂ − 2) |
 | **Effect size** | Cohen's d = (X̄₁ − X̄₂) / s_p |
@@ -301,9 +301,9 @@ where s_p = √(s_p²) is the pooled standard deviation.
 | **Effect** | Difference between two population means |
 | **Sampling distribution of X̄₁ − X̄₂** | Distribution of differences between sample means |
 | **Pooled variance (s_p²)** | Combined estimate of common population variance |
-| **Estimated standard error (sX̄₁−X̄₂)** | Standard error when σ is estimated |
-| **p-value** | Degree of rarity of the test result given H₀ true |
-| **Statistical significance** | H₀ rejected; result unlikely due to chance |
+| **Estimated standard error ($s_{\bar{X}_1 - \bar{X}_2}$)** | Standard error when σ is estimated |
+| **p-value** | Degree of rarity of the test result given $H_0$ true |
+| **Statistical significance** | $H_0$ rejected; result unlikely due to chance |
 | **Cohen's d** | Standardized effect size in SD units |
 | **File drawer effect** | Bias from unpublished nonsignificant results |
 | **Meta-analysis** | Statistical synthesis of multiple studies |
@@ -322,7 +322,7 @@ $$s_p^2 = \frac{SS_1 + SS_2}{n_1 + n_2 - 2}$$
 $$s_{\bar{X}_1 - \bar{X}_2} = \sqrt{\frac{s_p^2}{n_1} + \frac{s_p^2}{n_2}}$$
 
 **Confidence interval for μ₁ − μ₂:**
-$$\text{CI} = (\bar{X}_1 - \bar{X}_2) \pm (t_{conf})(s_{\bar{X}_1 - \bar{X}_2})$$
+$$\text{CI} = (\bar{X}_1 - \bar{X}_2) \pm (t_{\text{conf}})\,(s_{\bar{X}_1 - \bar{X}_2})$$
 
 **Cohen's d:**
 $$d = \frac{\bar{X}_1 - \bar{X}_2}{s_p}$$

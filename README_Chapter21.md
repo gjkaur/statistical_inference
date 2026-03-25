@@ -29,7 +29,7 @@ Chapter 21 is a **postscript**—a concise summary and decision guide for select
 - **Traditional preference:** Hypothesis tests are often preferred in the behavioral sciences
 - **Best practice:** If the null hypothesis is rejected, **always** estimate effect size using:
   - Confidence intervals
-  - Other effect size estimates: **d**, **η²**, or **φ²c**
+  - Other effect size estimates: **d**, **η²**, or **$\phi_c^2$** (Cramer's phi squared)
 - **Figure 21.1** reflects a preference for hypothesis tests but emphasizes the importance of effect size estimation
 
 ---
@@ -231,7 +231,7 @@ TYPE OF DATA
 ## Quick Reference: Decision Checklist
 
 1. **Descriptive or inferential?** → Descriptive: tables, graphs, means, etc. | Inferential: CI or hypothesis test
-2. **Hypothesis test or CI?** → If test, also report effect size (d, η², φ²c)
+2. **Hypothesis test or CI?** → If test, also report effect size ($d$, $\eta^2$, $\phi_c^2$)
 3. **Quantitative or qualitative?** → Quantitative: t/F (or U/T/H) | Qualitative: χ²
 4. **Number of groups?** → One: t | Two: t (independent/related/correlation) | Three+: F
 5. **Assumptions violated or ranked data?** → Use nonparametric: U, T, or H

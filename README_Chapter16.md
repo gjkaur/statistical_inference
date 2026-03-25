@@ -16,8 +16,8 @@ Chapter 16 introduces **Analysis of Variance (ANOVA)**—a procedure for testing
 
 ### Statistical Hypotheses
 
-- **H₀:** μ₀ = μ₂₄ = μ₄₈ (all population means equal)
-- **H₁:** H₀ is false (at least one mean differs)
+- **$H_0$:** μ₀ = μ₂₄ = μ₄₈ (all population means equal)
+- **$H_1$:** $H_0$ is false (at least one mean differs)
 
 ### Why Not t Tests?
 
@@ -39,7 +39,7 @@ Chapter 16 introduces **Analysis of Variance (ANOVA)**—a procedure for testing
 ### Variability Between Groups
 
 - Variation among scores of subjects in **different** groups (different treatments)
-- Reflects **random error** + **treatment effect** (if H₀ is false)
+- Reflects **random error** + **treatment effect** (if $H_0$ is false)
 
 ### Variability Within Groups
 
@@ -49,8 +49,8 @@ Chapter 16 introduces **Analysis of Variance (ANOVA)**—a procedure for testing
 
 ### The Logic
 
-- **If H₀ true:** Between-group and within-group variability both reflect random error → F ≈ 1
-- **If H₀ false:** Between-group variability also reflects treatment effect → F > 1
+- **If $H_0$ true:** Between-group and within-group variability both reflect random error → F ≈ 1
+- **If $H_0$ false:** Between-group variability also reflects treatment effect → F > 1
 
 ### Treatment Effect
 
@@ -66,20 +66,20 @@ $$F = \frac{\text{variability between groups}}{\text{variability within groups}}
 
 ### Interpretation
 
-| H₀ Status | Numerator | Denominator | F |
+| $H_0$ Status | Numerator | Denominator | F |
 |----------|-----------|-------------|---|
 | **True** | Random error | Random error | ≈ 1 |
 | **False** | Random error + treatment effect | Random error | > 1 |
 
 ### Decision Rule
 
-- **Reject H₀** if observed F ≥ critical F
-- **Retain H₀** if observed F < critical F
+- **Reject $H_0$** if observed F ≥ critical F
+- **Retain $H_0$** if observed F < critical F
 
 ### Sleep Deprivation Example
 
-- **Outcome A:** F = 0.75 → retain H₀ (small mean differences)
-- **Outcome B:** F = 7.36 → reject H₀ (large mean differences)
+- **Outcome A:** F = 0.75 → retain $H_0$ (small mean differences)
+- **Outcome B:** F = 7.36 → reject $H_0$ (large mean differences)
 
 ---
 
@@ -145,7 +145,7 @@ $$F = \frac{MS_{between}}{MS_{within}}$$
 ### Sleep Deprivation Example
 
 - dfbetween = 2, dfwithin = 6 → critical F = 5.14 (α = .05)
-- Observed F = 7.36 > 5.14 → **reject H₀**
+- Observed F = 7.36 > 5.14 → **reject $H_0$**
 
 ### Approximate p-Values
 
@@ -224,7 +224,7 @@ $$HSD = q \sqrt{\frac{MS_{within}}{n}}$$
 
 ### Interpretation
 
-- If |X̄ᵢ − X̄ⱼ| ≥ HSD → reject H₀ for that pair
+- If |X̄ᵢ − X̄ⱼ| ≥ HSD → reject $H_0$ for that pair
 - Sleep deprivation: HSD = 4.77; only 0 vs. 48 hours (difference = 6) is significant
 
 ### Cohen's d for Significant Pairs
@@ -275,10 +275,10 @@ $$d = \frac{\bar{X}_1 - \bar{X}_2}{\sqrt{MS_{within}}}$$
 
 | Topic | Key Point |
 |-------|-----------|
-| **ANOVA** | Tests H₀: all population means equal |
+| **ANOVA** | Tests $H_0$: all population means equal |
 | **F ratio** | MSbetween / MSwithin |
-| **If H₀ true** | F ≈ 1 |
-| **If H₀ false** | F > 1 |
+| **If $H_0$ true** | F ≈ 1 |
+| **If $H_0$ false** | F > 1 |
 | **Effect size** | η² = SSbetween / SStotal |
 | **Multiple comparisons** | Tukey's HSD (after significant F) |
 

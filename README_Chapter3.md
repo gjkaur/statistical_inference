@@ -57,17 +57,17 @@ Multiple modes can indicate different subgroups in the data.
 **Sample mean:**
 $$\bar{X} = \frac{\sum X}{n}$$
 
-- **X̄** (X-bar) = sample mean  
-- **ΣX** = sum of all scores  
-- **n** = sample size  
+- **$\bar{X}$** (X-bar) = sample mean  
+- **$\sum X$** = sum of all scores  
+- **$n$** = sample size  
 
 **Population mean:**
 $$\mu = \frac{\sum X}{N}$$
 
-- **μ** (mu) = population mean  
-- **N** = population size  
+- **$\mu$** (mu) = population mean  
+- **$N$** = population size  
 
-*Greek symbols (μ, σ) = population; English (X̄, s) = sample.*
+*Greek symbols ($\mu$, $\sigma$) = population; English ($\bar{X}$, $s$) = sample.*
 
 ### Key Properties
 
@@ -163,10 +163,10 @@ $$\mu = \frac{\sum X}{N}$$
 | Median | Middle value when observations are ordered |
 | Sample | Subset of scores |
 | Population | Complete set of scores |
-| Sample mean (X̄) | Balance point for a sample; ΣX ÷ n |
-| Population mean (μ) | Balance point for a population; ΣX ÷ N |
-| Sample size (n) | Number of scores in sample |
-| Population size (N) | Number of scores in population |
+| Sample mean ($\bar{X}$) | Balance point for a sample; $\sum X \div n$ |
+| Population mean ($\mu$) | Balance point for a population; $\sum X \div N$ |
+| Sample size ($n$) | Number of scores in sample |
+| Population size ($N$) | Number of scores in population |
 
 ---
 
