@@ -18,6 +18,56 @@ All three use Student’s *t* because the population standard deviation $\sigma$
 
 ---
 
+## Key formulas
+
+### Chapter 13 — one sample
+
+**Standard error of the mean** (σ unknown):
+
+$$s_{\bar{X}} = \frac{s}{\sqrt{n}}$$
+
+***t* ratio:**
+
+$$t = \frac{\bar{X} - \mu_{\text{hyp}}}{s_{\bar{X}}}$$
+
+**Degrees of freedom:** $df = n - 1$
+
+---
+
+### Chapter 14 — two independent samples
+
+**Standard error of the difference** (pooled-variance *t*; equal population variances assumed):
+
+$$s_p^2 = \frac{SS_1 + SS_2}{n_1 + n_2 - 2}$$
+
+$$s_{\bar{X}_1 - \bar{X}_2} = \sqrt{\frac{s_p^2}{n_1} + \frac{s_p^2}{n_2}}$$
+
+***t* ratio** (often $(\mu_1 - \mu_2)_{\text{hyp}} = 0$):
+
+$$t = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)_{\text{hyp}}}{s_{\bar{X}_1 - \bar{X}_2}}$$
+
+**Degrees of freedom:** $df = n_1 + n_2 - 2$
+
+---
+
+### Chapter 15 — two related samples
+
+**Difference scores** (one pair per subject or matched pair):
+
+$$D = X_1 - X_2, \qquad \bar{D} = \frac{\Sigma D}{n}$$
+
+**Standard error of $\bar{D}$:**
+
+$$s_{\bar{D}} = \frac{s_D}{\sqrt{n}}$$
+
+***t* ratio** (often $\mu_{D,\text{hyp}} = 0$):
+
+$$t = \frac{\bar{D} - \mu_{D,\text{hyp}}}{s_{\bar{D}}}$$
+
+**Degrees of freedom:** $df = n - 1$, where $n$ is the number of **pairs** (difference scores).
+
+---
+
 ## Chapter 13: One sample
 
 **Use when** you have **one** sample and want to test a claim about **one** population mean—for example, whether the mean mileage of new cars meets a legal standard.

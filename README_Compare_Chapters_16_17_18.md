@@ -18,6 +18,82 @@ All three extend the logic of comparing means beyond two-group *t* tests: they u
 
 ---
 
+## Key formulas
+
+**Mean square** (all chapters):
+
+$$MS = \frac{SS}{df}$$
+
+**Notation:** $N$ = total number of scores; $k$ = number of groups (Ch. 16–17) or levels of the repeated-measures factor (Ch. 17); in Ch. 17, $n$ = number of subjects (rows).
+
+---
+
+### Chapter 16 — one factor, independent groups
+
+**Partition:**
+
+$$SS_{\text{total}} = SS_{\text{between}} + SS_{\text{within}}$$
+
+**Degrees of freedom:**
+
+| Source | $df$ |
+|--------|------|
+| Between | $k - 1$ |
+| Within | $N - k$ |
+
+**Check:** $(N - 1) = (k - 1) + (N - k)$
+
+***F* ratio:**
+
+$$F = \frac{MS_{\text{between}}}{MS_{\text{within}}}$$
+
+---
+
+### Chapter 17 — one factor, repeated measures
+
+**Partition:**
+
+$$SS_{\text{total}} = SS_{\text{between}} + SS_{\text{subject}} + SS_{\text{error}}$$
+
+with $SS_{\text{within}} = SS_{\text{subject}} + SS_{\text{error}}$ (same $SS_{\text{within}}$ as in Ch. 16).
+
+**Degrees of freedom:**
+
+| Source | $df$ |
+|--------|------|
+| Between | $k - 1$ |
+| Subject | $n - 1$ |
+| Error | $df_{\text{within}} - df_{\text{subject}}$ |
+
+**Check:** $df_{\text{total}} = df_{\text{between}} + df_{\text{subject}} + df_{\text{error}}$
+
+***F* ratio:**
+
+$$F = \frac{MS_{\text{between}}}{MS_{\text{error}}}$$
+
+---
+
+### Chapter 18 — two factors (independent groups factorial)
+
+**Partition:**
+
+$$SS_{\text{total}} = SS_{\text{column}} + SS_{\text{row}} + SS_{\text{interaction}} + SS_{\text{within}}$$
+
+**Degrees of freedom** ($c$ = columns, $r$ = rows):
+
+| Source | $df$ |
+|--------|------|
+| Column (Factor A) | $c - 1$ |
+| Row (Factor B) | $r - 1$ |
+| Interaction | $(c - 1)(r - 1)$ |
+| Within | $N - cr$ |
+
+**Three *F* ratios** (each uses the same error mean square):
+
+$$F_{\text{column}} = \frac{MS_{\text{column}}}{MS_{\text{within}}}, \qquad F_{\text{row}} = \frac{MS_{\text{row}}}{MS_{\text{within}}}, \qquad F_{\text{interaction}} = \frac{MS_{\text{interaction}}}{MS_{\text{within}}}$$
+
+---
+
 ## Chapter 16: One factor, independent groups
 
 **Use when** you have **one** categorical independent variable with **two or more levels**, and **different participants** are assigned to each level (between-subjects design).
